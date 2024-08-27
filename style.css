@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+.main{
+    width: 100%;
+    margin: auto auto auto auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: calc(100vh-50px);
+    align-items: end;
+   }
+.left{
+ height: 70%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+}
+.ingreso_texto{
+    display: flex;
+    margin: 2rem 2rem 2rem auto;
+    width: 80%;
+    font-size: 2rem;
+    color: blue;
+    border: none;
+    outline: none;
+    resize: none;   
+ }
+
+.ingreso_texto::placeholder{
+    color: blue;
+}
+.left-button{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+   
+}
+.boton_encriptar,
+.boton_desencriptar,
+.copiar{
+width: 20rem;
+margin: 2rem 2rem auto auto;
+height: 4.2rem;
+border-radius: 1.5rem;
+font-size: 1rem;
+}
+.boton_encriptar{
+    background-color: lightblue;
+}
+.boton_desencriptar{
+    background-color: gray;
+}
+.right{
+background-color: white;
+height: calc(100+3rem);
+border-radius: 2rem;
+padding: 2rem;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+align-items: center;
+}
+.right.ajustar{
+    justify-content: space-between;
+}
+.muñeco{
+    width: 100%;
+}
+.copiar{
+    width: 100%;
+    background-color: transparent;
+    display: none;
+}
+.mensaje_final{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.mensaje_final.ajustar{
+    height: 70%;
+}
+.right_info{
+    font-size: 1rem;
+    text-align: center;
+}
